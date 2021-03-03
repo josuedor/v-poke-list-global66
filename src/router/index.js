@@ -14,6 +14,11 @@ const routes = [
     name: 'loading',
     component: () => import('../views/Loading.vue'),
   },
+  {
+    path: '/pokemon-list',
+    name: 'pokemonList',
+    component: () => import('../views/PokemonList.vue'),
+  },
 ]
 
 // eslint-disable-next-line no-new

@@ -1,7 +1,6 @@
 <template>
   <v-container fluid class="full-height">
     <v-row justify="center" class="full-height">
-      <v-col></v-col>
       <v-col cols="12" class="text-center">
        <v-img
           :src="require('../assets/pokeball.svg')"
@@ -29,9 +28,9 @@ export default {
   methods: {
       goToNextView(){
         setTimeout(() => { 
-            this.$router.push('/')
+            this.$router.push('/pokemon-list')
         }, 
-        4000);
+        3000);
       }
   },
 };
@@ -39,12 +38,12 @@ export default {
 
 <style lang="css">
     .full-height{
-        height: 80%;
+        height: 100%;
     }
 
     .rotate {
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         width: 120px;
         height: 120px;

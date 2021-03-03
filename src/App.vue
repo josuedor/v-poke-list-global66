@@ -1,6 +1,6 @@
 <template>
   <v-app class="lato-font">
-     <v-main>
+     <v-main style="background-color: #F9F9F9;">
       <router-view :key="$route.fullPath"></router-view>
     </v-main>
   </v-app>
@@ -8,7 +8,6 @@
 
 <script>
 //import HelloWorld from './components/HelloWorld';
-
 export default {
   name: 'App',
 

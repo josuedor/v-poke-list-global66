@@ -19,7 +19,7 @@
         </p>
       </v-col>
       <v-col cols="12" class="text-center">
-        <v-btn class="ma-2 white--text" rounded color="#F22539" to="/loading">
+        <v-btn large class="ma-2 white--text" rounded color="#F22539" to="/loading">
           Get started
         </v-btn>
       </v-col>
