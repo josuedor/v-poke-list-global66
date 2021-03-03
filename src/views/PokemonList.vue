@@ -24,16 +24,8 @@
                     >
                         <div class="title">
                             {{ item.name }}
-                            <v-btn
-                            class="float-right"
-                            x-small
-                            fab
-                            text
-                            :color="item.favorite ? '#ECA539' : 'grey'"
-                            @click.stop="addToFavorites(item.id, index)"
-                            >
-                                <v-icon>mdi-star</v-icon>
-                            </v-btn>
+                            <v-img v-if="item.favorite" :src="require('../assets/active.svg')" class="float-right" style="width: 38px; vertical-align: middle;" @click.stop="addToFavorites(item.id, index)" />
+                            <v-img v-else :src="require('../assets/inactive.svg')" class="float-right" style="width: 38px; vertical-align: middle;" @click.stop="addToFavorites(item.id, index)" />
                         </div>
 
                     </v-sheet>
@@ -123,13 +115,8 @@
                 Share to my friends
             </v-btn>
             <v-spacer></v-spacer>
-           <v-btn
-            fab
-            text
-            :color="isFav ? '#ECA539' : 'grey'"
-            >
-                <v-icon>mdi-star</v-icon>
-            </v-btn>
+            <v-img v-if="isFav" :src="require('../assets/active.svg')" class="float-right" max-width="50" />
+            <v-img v-else :src="require('../assets/inactive.svg')" class="float-right" max-width="50" />
             </v-card-actions>
         </v-card>
         </v-dialog>
