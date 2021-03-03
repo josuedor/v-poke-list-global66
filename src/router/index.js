@@ -9,6 +9,11 @@ const routes = [
     name: 'welcome',
     component: () => import('../views/Welcome.vue'),
   },
+  {
+    path: '/loading',
+    name: 'loading',
+    component: () => import('../views/Loading.vue'),
+  },
 ]
 
 // eslint-disable-next-line no-new
